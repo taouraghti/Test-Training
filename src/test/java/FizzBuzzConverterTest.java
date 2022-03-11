@@ -38,4 +38,10 @@ public class FizzBuzzConverterTest {
         String result = new FizzBuzzConverter().convert(60);
         Assertions.assertEquals("FizzBuzz", result);
     }
+
+    @Test
+    public void shouldReturnInputWhenInputIsNotMultipleOf5And3(){
+        String result = new FizzBuzzConverter().convert(8);
+        Assertions.assertEquals("8", result);
+    }
 }

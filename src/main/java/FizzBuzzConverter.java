@@ -4,6 +4,9 @@ public class FizzBuzzConverter {
             return "Buzz";
         else if(i % 3 == 0 && i % 5 != 0)
             return "Fizz";
-        return "FizzBuzz";
+        else if(i % 3 == 0 && i % 5 == 0)
+            return "FizzBuzz";
+        else
+            return String.valueOf(i);
     }
 }
