@@ -20,4 +20,10 @@ public class FizzBuzzConverterTest {
         String result = new FizzBuzzConverter().convert(15);
         Assertions.assertEquals("FizzBuzz", result);
     }
+
+    @Test
+    public void shouldReturnFizzWhenInputIsMultipleOf3(){
+        String result = new FizzBuzzConverter().convert(6);
+        Assertions.assertEquals("Fizz", result);
+    }
 }
