@@ -5,43 +5,43 @@ public class FizzBuzzConverterTest {
 
     @Test
     public void shouldReturnFizzWhenInputIs3(){
-        String result = new FizzBuzzConverter().convert(3);
+        String result = FizzBuzzConverter.convert(3);
         Assertions.assertEquals("Fizz", result);
     }
 
     @Test
     public void shouldReturnBuzzWhenInputIs5(){
-        String result = new FizzBuzzConverter().convert(5);
+        String result = FizzBuzzConverter.convert(5);
         Assertions.assertEquals("Buzz", result);
     }
 
     @Test
     public void shouldReturnFizzBuzzWhenInputIs15(){
-        String result = new FizzBuzzConverter().convert(15);
+        String result = FizzBuzzConverter.convert(15);
         Assertions.assertEquals("FizzBuzz", result);
     }
 
     @Test
     public void shouldReturnFizzWhenInputIsMultipleOf3(){
-        String result = new FizzBuzzConverter().convert(6);
+        String result = FizzBuzzConverter.convert(6);
         Assertions.assertEquals("Fizz", result);
     }
 
     @Test
     public void shouldReturnBuzzWhenInputIsMultipleOf5(){
-        String result = new FizzBuzzConverter().convert(10);
+        String result = FizzBuzzConverter.convert(10);
         Assertions.assertEquals("Buzz", result);
     }
 
     @Test
     public void shouldReturnFizzBuzzWhenInputIsMultipleOf15(){
-        String result = new FizzBuzzConverter().convert(60);
+        String result = FizzBuzzConverter.convert(60);
         Assertions.assertEquals("FizzBuzz", result);
     }
 
     @Test
     public void shouldReturnInputWhenInputIsNotMultipleOf5And3(){
-        String result = new FizzBuzzConverter().convert(8);
+        String result = FizzBuzzConverter.convert(8);
         Assertions.assertEquals("8", result);
     }
 }

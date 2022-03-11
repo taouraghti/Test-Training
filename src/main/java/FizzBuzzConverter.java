@@ -1,5 +1,5 @@
 public class FizzBuzzConverter {
-    public String convert(int i) {
+    public static String convert(int i) {
         if(i % 3 == 0 && i % 5 == 0)
             return "FizzBuzz";
         else if(i % 3 == 0)
