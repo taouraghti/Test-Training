@@ -8,4 +8,10 @@ public class FizzBuzzEngineTest {
         List<String> result = new FizzBuzzEngine().fizzBuzzList(2);
         Assertions.assertArrayEquals(List.of("1", "2").toArray(), result.toArray());
     }
+
+    @Test
+    public void shouldReturn1And2AndFizzWhenInputIs3(){
+        List<String> result = new FizzBuzzEngine().fizzBuzzList(3);
+        Assertions.assertArrayEquals(List.of("1", "2", "Fizz").toArray(), result.toArray());
+    }
 }
