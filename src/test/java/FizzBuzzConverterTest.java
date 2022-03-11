@@ -8,4 +8,10 @@ public class FizzBuzzConverterTest {
         String result = new FizzBuzzConverter().convert(3);
         Assertions.assertEquals("Fizz", result);
     }
+    
+    @Test
+    public void shouldReturnBuzzWhenInputIs5(){
+        String result = new FizzBuzzConverter().convert(5);
+        Assertions.assertEquals("Buzz", result);
+    }
 }
