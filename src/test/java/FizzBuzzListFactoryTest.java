@@ -15,4 +15,11 @@ public class FizzBuzzListFactoryTest {
         List<Integer> list = List.of(1,2,3);
         Assertions.assertArrayEquals(list.toArray(), result.toArray());
     }
+
+    @Test
+    public void shouldReturnListBetween1And7WhenInputIs7(){
+        List<Integer> result = new FizzBuzzListFactory().createList(7);
+        List<Integer> list = List.of(1,2,3,4,5,6,7);
+        Assertions.assertArrayEquals(list.toArray(), result.toArray());
+    }
 }
