@@ -1,8 +1,8 @@
 public class FizzBuzzConverter {
     public String convert(int i) {
-        if(i % 5 == 0 && i != 15)
+        if(i % 5 == 0 && i % 3 != 0)
             return "Buzz";
-        if(i % 3 == 0 && i != 15)
+        else if(i % 3 == 0 && i % 5 != 0)
             return "Fizz";
         return "FizzBuzz";
     }
